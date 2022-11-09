@@ -43,11 +43,13 @@ from flask import Flask
 from PIL import Image
 from flask import render_template
 import numpy as np
+import secrets
 
 from img import make
 
 app = Flask(__name__)
 
+app.secret_key=secrets.token_urlsafe(32)
 
 @app.route("/")
 def button():
