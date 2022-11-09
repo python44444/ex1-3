@@ -21,6 +21,6 @@ def make_img():
     mat_data = np.stack([hue_data, sat_data, val_data], 2)
 
     im = Image.fromarray(np.uint8(mat_data), "HSV")
-    im_rgb = im.convert("RGB")
+    im_data = im.convert("RGB")
 
-    return im_rgb
+    return im_data
