@@ -49,7 +49,8 @@ from img import make
 
 app = Flask(__name__)
 
-app.secret_key=secrets.token_urlsafe(32)
+app.secret_key = secrets.token_urlsafe(32)
+
 
 @app.route("/")
 def button():
