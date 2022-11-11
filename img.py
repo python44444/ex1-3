@@ -14,6 +14,7 @@ def make_img():
     h = np.random.randint(0, 255)
     for v in range(256):
         row_data.append(h)
+    # row_data = np.full(256, h)
 
     hue_data = np.tile(row_data, (256, 1))
     sat_data = np.transpose(hue_data)
