@@ -2,7 +2,7 @@ from flask import Flask
 from flask import render_template
 import secrets
 
-from img import make_path, make_img
+from img_2 import make_path, make_img
 
 app = Flask(__name__)
 
